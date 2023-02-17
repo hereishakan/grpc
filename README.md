@@ -1,104 +1,104 @@
-# gRPC – An RPC library and framework
+# gRPC - Bir RPC kitaplığı ve çerçevesi
 
-gRPC is a modern, open source, high-performance remote procedure call (RPC)
-framework that can run anywhere. gRPC enables client and server applications to
-communicate transparently, and simplifies the building of connected systems.
+gRPC, modern, açık kaynaklı, yüksek performanslı bir uzaktan yordam çağrısıdır (RPC)
+her yerde çalışabilen bir çerçeve. gRPC, istemci ve sunucu uygulamalarının
+şeffaf iletişim kurar ve bağlı sistemlerin oluşturulmasını basitleştirir.
 
-<table>
+<Tablo>
   <tr>
-    <td><b>Homepage:</b></td>
-    <td><a href="https://grpc.io/">grpc.io</a></td>
+    <td><b>Ana Sayfa:</b></td>
+    <td><a href="https://grpc.io /">grpc.io </a></td>
   </tr>
   <tr>
-    <td><b>Mailing List:</b></td>
-    <td><a href="https://groups.google.com/forum/#!forum/grpc-io">grpc-io@googlegroups.com</a></td>
+    <td><b>Posta Listesi:</b></td>
+    <td><a href="https://groups.google.com/forum /#!forum/grpc-ıo">grpc-io@googlegroups.com </a></td>
   </tr>
-</table>
+</Tablo>
 
-[![Join the chat at https://gitter.im/grpc/grpc](https://badges.gitter.im/grpc/grpc.svg)](https://gitter.im/grpc/grpc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Sohbete katılın https://gitter.im/grpc/grpc](https://badges.gitter.im/grpc/grpc.svg)](https://gitter.im/grpc/grpc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-## To start using gRPC
+## gRPC kullanmaya başlamak için
 
-To maximize usability, gRPC supports the standard method for adding dependencies
-to a user's chosen language (if there is one). In most languages, the gRPC
-runtime comes as a package available in a user's language package manager.
+Kullanılabilirliği en üst düzeye çıkarmak için gRPC, bağımlılıklar eklemek için standart yöntemi destekler
+kullanıcının seçtiği dile (varsa). Çoğu dilde, gRPC
+çalışma zamanı, kullanıcının dil paket yöneticisinde bulunan bir paket olarak gelir.
 
-For instructions on how to use the language-specific gRPC runtime for a project,
-please refer to these documents
+Bir proje için dile özgü gRPC çalışma zamanının nasıl kullanılacağına ilişkin yönergeler için,
+lütfen bu belgelere bakın
 
-- [C++](src/cpp): follow the instructions under the `src/cpp` directory
-- [C#/.NET](https://github.com/grpc/grpc-dotnet): NuGet packages `Grpc.Net.Client`, `Grpc.AspNetCore.Server`
-- [Dart](https://github.com/grpc/grpc-dart): pub package `grpc`
-- [Go](https://github.com/grpc/grpc-go): `go get google.golang.org/grpc`
-- [Java](https://github.com/grpc/grpc-java): Use JARs from Maven Central
-  Repository
-- [Kotlin](https://github.com/grpc/grpc-kotlin): Use JARs from Maven Central
-  Repository
-- [Node](https://github.com/grpc/grpc-node): `npm install @grpc/grpc-js`
-- [Objective-C](src/objective-c): Add `gRPC-ProtoRPC` dependency to podspec
-- [PHP](src/php): `pecl install grpc`
-- [Python](src/python/grpcio): `pip install grpcio`
-- [Ruby](src/ruby): `gem install grpc`
-- [WebJS](https://github.com/grpc/grpc-web): follow the grpc-web instructions
+- [C ++] (src / cpp): `src / cpp' dizini altındaki talimatları izleyin
+- [C#/.NET](https://github.com/grpc/grpc-dotnet ): NuGet paketleri `Grpc.Net.Client`, `Grpc.Ağ çekirdeği.Hizmetçi`
+- [Dart](https://github.com/grpc/grpc-dart ): pub paketi 'grpc`
+- [Git](https://github.com/grpc/grpc-go ): 'git al google.golang.org/grpc `
+- [Java](https://github.com/grpc/grpc-java ): Maven Central'dan Kavanozlar kullanın
+  Depo
+- [Kotlin](https://github.com/grpc/grpc-kotlin ): Maven Central'dan Kavanozlar kullanın
+  Depo
+- [Düğüm](https://github.com/grpc/grpc-node ): 'npm kurulumu @grpc / grpc-js`
+- [Objective-C] (src / objective-c): Podspec'e `gRPC-ProtoRPC` bağımlılığı ekleyin
+- [PHP](src/ php): `pecl grpc'yi yükle'
+- [Python](src / python / grpcıo): `pip grpcio'yu yükle'
+- [Ruby] (src / ruby): `gem kurulum grpc'si'
+- [Webj'ler](https://github.com/grpc/grpc-web ): grpc-web talimatlarını izleyin
 
-Per-language quickstart guides and tutorials can be found in the
-[documentation section on the grpc.io website](https://grpc.io/docs/). Code
-examples are available in the [examples](examples) directory.
+Dil başına hızlı başlangıç kılavuzları ve öğreticiler şu adreste bulunabilir:
+[dokümantasyon bölümü grpc.io web sitesi](https://grpc.io/docs /). Kod
+örnekler [örnekler] (örnekler) dizininde mevcuttur.
 
-Precompiled bleeding-edge package builds of gRPC `master` branch's `HEAD` are
-uploaded daily to [packages.grpc.io](https://packages.grpc.io).
+gRPC 'ana' dalının 'KAFASININ' önceden derlenmiş kanama kenarı paketi yapıları şunlardır
+her gün yükleniyor [packages.grpc.io ](https://packages.grpc.io ).
 
-## To start developing gRPC
+## gRPC geliştirmeye başlamak için
 
-Contributions are welcome!
+Katkıları bekliyoruz!
 
-Please read [How to contribute](CONTRIBUTING.md) which will guide you through
-the entire workflow of how to build the source code, how to run the tests, and
-how to contribute changes to the gRPC codebase. The "How to contribute" document
-also contains info on how the contribution process works and contains best
-practices for creating contributions.
+Lütfen okuyun [Nasıl katkıda bulunulur](CONTRIBUTING.md ) size yol gösterecek olan
+kaynak kodun nasıl oluşturulacağına, testlerin nasıl çalıştırılacağına dair tüm iş akışı ve
+gRPC kod tabanındaki değişikliklere nasıl katkıda bulunulur. "Nasıl katkıda bulunulur" belgesi
+ayrıca katkı sürecinin nasıl çalıştığı hakkında bilgi içerir ve en iyisini içerir
+katkı yaratma uygulamaları.
 
-## Troubleshooting
+## Arıza
 
-Sometimes things go wrong. Please check out the
-[Troubleshooting guide](TROUBLESHOOTING.md) if you are experiencing issues with
+Bazen işler ters gider. Lütfen kontrol edin
+[Sorun giderme kılavuzu] (TROUBLESHOOTING.md ) ile ilgili sorunlar yaşıyorsanız
 gRPC.
 
-## Performance
+## Performans
 
-See the
-[Performance dashboard](https://grafana-dot-grpc-testing.appspot.com/)
-for performance numbers of master branch daily builds.
+Bakın
+[Performans kontrol paneli](https://grafana-dot-grpc-testing.appspot.com /)
+günlük ana dal yapılarının performans sayıları için.
 
-## Concepts
+## Kavramalar
 
-See [gRPC Concepts](CONCEPTS.md)
+Bkz. [gRPC Kavramları] (CONCEPTS.md )
 
-## About This Repository
+## Bu Depo Hakkında
 
-This repository contains source code for gRPC libraries implemented in multiple
-languages written on top of a shared C core library [src/core](src/core).
+Bu depo, birden çok uygulamada uygulanan gRPC kitaplıkları için kaynak kodu içerir
+paylaşılan bir C çekirdek kitaplığının [src / core] (src / core) üzerine yazılmış diller.
 
-Libraries in different languages may be in various states of development. We are
-seeking contributions for all of these libraries:
+Farklı dillerdeki kütüphaneler çeşitli gelişim durumlarında olabilir. Biz
+tüm bu kütüphanelere katkı sağlamak:
 
-| Language                | Source                             |
+/ Dil / Kaynak |
 | ----------------------- | ---------------------------------- |
-| Shared C [core library] | [src/core](src/core)               |
-| C++                     | [src/cpp](src/cpp)                 |
-| Ruby                    | [src/ruby](src/ruby)               |
-| Python                  | [src/python](src/python)           |
-| PHP                     | [src/php](src/php)                 |
-| C# (core library based) | [src/csharp](src/csharp)           |
-| Objective-C             | [src/objective-c](src/objective-c) |
+/ Paylaşılan C [çekirdek kitaplığı] / [src / çekirdek] (src | çekirdek) /
+| C++ | [src/cpp](src/cpp) |
+/ Yakut | [src/yakut](src/yakut) |
+/ Python / [src/python](src/python) |
+| PHP / [src/php](src/php) |
+| C # (temel kitaplık tabanlı) | [src/csharp] (src/csharp) |
+/ Amaç-C / [src/amaç-c] (src/amaç-c) |
 
-| Language             | Source repo                                        |
+/ Dil / Kaynak repo |
 | -------------------- | -------------------------------------------------- |
-| Java                 | [grpc-java](https://github.com/grpc/grpc-java)     |
-| Kotlin               | [grpc-kotlin](https://github.com/grpc/grpc-kotlin) |
-| Go                   | [grpc-go](https://github.com/grpc/grpc-go)         |
-| NodeJS               | [grpc-node](https://github.com/grpc/grpc-node)     |
-| WebJS                | [grpc-web](https://github.com/grpc/grpc-web)       |
-| Dart                 | [grpc-dart](https://github.com/grpc/grpc-dart)     |
-| .NET (pure C# impl.) | [grpc-dotnet](https://github.com/grpc/grpc-dotnet) |
-| Swift                | [grpc-swift](https://github.com/grpc/grpc-swift) |
+| Java / [grpc-java](https://github.com/grpc/grpc-java ) |
+/ Kotlin | [grpc-kotlin](https://github.com/grpc/grpc-kotlin ) |
+| Git / [grpc-git](https://github.com/grpc/grpc-go ) |
+| NodeJS / [grpc düğümü](https://github.com/grpc/grpc-node ) |
+| WebJS | [grpc-web](https://github.com/grpc/grpc-web ) |
+/ Dart / [grpc-dart](https://github.com/grpc/grpc-dart ) |
+| .NET (saf C # impl.) / [grpc-dotnet](https://github.com/grpc/grpc-dotnet ) |
+| Hızlı | [grpc-hızlı](https://github.com/grpc/grpc-swift ) |
